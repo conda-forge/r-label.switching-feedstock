@@ -23,6 +23,7 @@ build:
 requirements:
   build:
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
     - r-combinat
@@ -39,13 +40,14 @@ test:
 
 about:
   home: https://CRAN.R-project.org/package=label.switching
-  license: GPL-2
+  license: GPL-2.0-only
   summary: The Bayesian estimation of mixture models (and more general hidden Markov models)
     suffers from the label switching phenomenon, making the MCMC output non-identifiable.
     This package can be used in order to deal with this problem using various relabelling
     algorithms.
   license_family: GPL2
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
