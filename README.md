@@ -1,11 +1,11 @@
-About r-label.switching
-=======================
+About r-label.switching-feedstock
+=================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-label.switching-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=label.switching
 
 Package license: GPL-2.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-label.switching-feedstock/blob/main/LICENSE.txt)
 
 Summary: The Bayesian estimation of mixture models (and more general hidden Markov models) suffers from the label switching phenomenon, making the MCMC output non-identifiable. This package can be used in order to deal with this problem using various relabelling algorithms.
 
